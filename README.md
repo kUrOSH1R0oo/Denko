@@ -34,6 +34,6 @@ To run Tansa, execute the script from the command line with the desired paramete
   - **-t, --threads**: Number of threads for concurrent crawling (default: 4).
   - **-s, --save**: Option to save results to files ("yes" or "no", default: "no").
   - **-a, --user-agent**: Custom User-Agent string for requests.
-    ```bash
-    python3 tansa.py http://example.com -m 50 -d 4 -t 6 -s yes -a "CustomUserAgent/1.0"
-    ```
+  ```bash
+  python3 tansa.py http://example.com -m 50 -d 4 -t 6 -s yes -a "CustomUserAgent/1.0"
+  ```
