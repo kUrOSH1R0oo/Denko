@@ -2,10 +2,10 @@
 Tansa is an advanced web crawler designed to automatically navigate through websites, extract and categorize links, and provide a structured view of the web content. With its ability to handle multi-threaded operations, Tansa is a powerful tool for web scraping, site analysis, and link discovery.
 
 ## Features
-- **Internal and External URL Extraction**: Differentiates between internal (within the same domain) and external (outside the domain) URLs.
-- **Multi-threaded Operation**: Speeds up the crawling process by using multiple threads.
-- **Results Saving**: Optionally saves the extracted URLs to separate text files for internal and external links.
-- **Customizable User-Agent**: Allows you to specify a custom User-Agent string for HTTP requests.
+   - **Internal and External URL Extraction**: Differentiates between internal (within the same domain) and external (outside the domain) URLs.
+   - **Multi-threaded Operation**: Speeds up the crawling process by using multiple threads.
+   - **Results Saving**: Optionally saves the extracted URLs to separate text files for internal and external links.
+   - **Customizable User-Agent**: Allows you to specify a custom User-Agent string for HTTP requests.
 
 ## Installation
 1. Clone the repository
@@ -37,3 +37,9 @@ To run Tansa, execute the script from the command line with the desired paramete
   ```bash
   python3 tansa.py http://example.com -m 50 -d 4 -t 6 -s yes -a "CustomUserAgent/1.0"
   ```
+
+## License
+   - Tansa is licensed under GNU General Public License
+
+## Author
+   - Veilwr4ith
