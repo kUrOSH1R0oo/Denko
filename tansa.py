@@ -70,8 +70,8 @@ class Tansa:
         if depth > self.max_depth:
             return urls
         try:
-            response = self.session.get(url, allow_redirects=True)  # Follow redirects
-            response.raise_for_status()  # Ensure we notice bad responses
+            response = self.session.get(url, allow_redirects=True)
+            response.raise_for_status()
             soup = BeautifulSoup(response.content, "html.parser")
             robots_txt = self.get_robots_txt(url)
             if not self.can_fetch(url, robots_txt):
