@@ -27,12 +27,13 @@ To run Tansa, execute the script from the command line with the desired paramete
   python3 tansa.py URL <options>
   ```
 
-  ## Parameters
+## Parameters
   - **url (required)**: The base URL to start the web crawling process.
   - **-m, --max-urls**: Maximum number of URLs to crawl (default: 30).
   - **-d, --max-depth**: Maximum depth level for crawling (default: 3).
   - **-t, --threads**: Number of threads for concurrent crawling (default: 4).
   - **-s, --save**: Option to save results to files ("yes" or "no", default: "no").
   - **-a, --user-agent**: Custom User-Agent string for requests.
-
-## 
+    ```bash
+    python3 tansa.py http://example.com -m 50 -d 4 -t 6 -s yes -a "CustomUserAgent/1.0"
+    ```
