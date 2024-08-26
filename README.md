@@ -42,4 +42,4 @@ To run Tansa, execute the script from the command line with the desired paramete
    - Tansa is licensed under GNU General Public License
 
 ## Author
-   - Veilwr4ith
+   - Zephyr
