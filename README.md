@@ -10,7 +10,7 @@ Tansa is an advanced web crawler designed to automatically navigate through webs
 ## Installation
 1. Clone the repository
    ```bash
-   git clone https://github.com/z33phyr/Tansa
+   git clone https://github.com/Kuraiyume/Tansa
    ```
 2. Install the essential libraries
    ```bash
@@ -42,4 +42,4 @@ To run Tansa, execute the script from the command line with the desired paramete
    - Tansa is licensed under GNU General Public License
 
 ## Author
-   - Zephyr
+   - Kuraiyume
