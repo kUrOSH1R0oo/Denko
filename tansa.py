@@ -89,10 +89,10 @@ class Tansa:
                 if href in self.internal_urls or href in self.external_urls:
                     continue
                 if domain_name not in href:
-                    print(f"[!] External: {href}")
+                    print(f"[!] Third-Party: {href}")
                     self.external_urls.add(href)
                     continue
-                print(f"[*] Internal: {href}")
+                print(f"[*] In-Domain: {href}")
                 urls.add(href)
                 self.internal_urls.add(href)
         except requests.RequestException as e:
@@ -120,10 +120,10 @@ class Tansa:
 
     def save_results_to_file(self):
         domain_name = urlparse(self.base_url).netloc
-        with open(f"{domain_name}_internal.txt", "w") as f:
+        with open(f"{domain_name}_in-domain.txt", "w") as f:
             for internal_link in self.internal_urls:
                 f.write(internal_link.strip() + "\n")
-        with open(f"{domain_name}_external.txt", "w") as f:
+        with open(f"{domain_name}_third-party.txt", "w") as f:
             for external_link in self.external_urls:
                 f.write(external_link.strip() + "\n")
 
@@ -140,10 +140,10 @@ class Tansa:
             t.join()
         if self.save_results:
             self.save_results_to_file()
-        print(f"[+] Total Internal links: {len(self.internal_urls)}")
-        print(f"[+] Total External links: {len(self.external_urls)}")
+        print(f"[+] Total In-Domain links: {len(self.internal_urls)}")
+        print(f"[+] Total Third-Party links: {len(self.external_urls)}")
         print(f"[+] Total URLs: {len(self.external_urls) + len(self.internal_urls)}")
-        print(f"[+] Total crawled URLs: {self.total_urls_visited}")
+        print(f"[+] Total Crawled URLs: {self.total_urls_visited}")
 
 if __name__ == "__main__":
     print(banner)
