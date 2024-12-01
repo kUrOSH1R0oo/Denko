@@ -35,4 +35,4 @@ Denko is a web crawler designed to automatically navigate through websites, extr
    - Denko is licensed under GNU General Public License
 
 ## Author
-   - Kuraiyume (A1SBERG)
+   - Kuroshiro (A1SBERG)
