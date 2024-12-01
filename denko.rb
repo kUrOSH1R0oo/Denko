@@ -13,7 +13,7 @@ BANNER = <<~BANNER
 ▓  ▓▓▓▓  ▓▓      ▓▓▓▓  ▓  ▓  ▓▓     ▓▓▓▓▓  ▓▓▓▓  ▓
 █  ████  ██  ████████  ██    ██  ███  ███  ████  █
 █       ███        ██  ███   ██  ████  ███      ██
-                                    ~ Kuraiyume
+                                    ~ Kuroshiro
 BANNER
 
 class Tansa
