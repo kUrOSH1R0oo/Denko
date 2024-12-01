@@ -10,7 +10,7 @@ Denko is a web crawler designed to automatically navigate through websites, extr
 ## Installation
    1. Clone the repository
       ```bash
-      git clone https://github.com/Kuraiyume/Denko
+      git clone https://github.com/kUrOSH1R0oo/Denko
       ```
    2. Install the essential gems
       ```bash
